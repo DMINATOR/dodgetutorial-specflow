@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Threading.Tasks;
 
 public class HUD : CanvasLayer
 {
@@ -17,7 +18,7 @@ public class HUD : CanvasLayer
         GetNode<Timer>("MessageTimer").Start();
     }
 
-    async public void ShowGameOver()
+    public async void ShowGameOver()
     {
         ShowMessage("Game Over");
 
