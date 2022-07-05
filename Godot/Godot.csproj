@@ -1,6 +1,14 @@
 <Project Sdk="Godot.NET.Sdk/3.3.0">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-	<LangVersion>10</LangVersion>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>10</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Update="GodotSharp">
+			<Private>True</Private>
+		</Reference>
+		<Reference Update="GodotSharpEditor">
+			<Private>True</Private>
+		</Reference>
+	</ItemGroup>
 </Project>
